@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
+import { Grid, Cell } from 'react-mdl';
 
 
 class Landing extends Component {
   render() {
     return(
-      <div><h1>landing Page</h1></div>
+      <div style={{width: '100%', margin: 'auto'}} >
+          <Grid className="landing">
+          <Cell col={12}> </Cell>
+           
+        </Grid>
+        
+        
+        
+        
+        
+        
+        </div>
     )
   }
 }
