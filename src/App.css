@@ -29,3 +29,12 @@
 }
 
 
+.App {
+	background: #000000;
+    color: #fff;
+    overflow: hidden;
+}
+
+a {
+	color: #fff !important;
+}
