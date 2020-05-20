@@ -45,13 +45,16 @@ class Landing extends Component {
                   href="mailto:kimiadarden@gmail.com"
                   target="new"
                 >
-                  <i class="fa fa-google" aria-hidden="true"></i>
+                  <i className="fa fa-google" aria-hidden="true"/>
                 </a>
               </div>
             </div>
           </Cell>
         </Grid>
+
+        
       </div>
+      
     );
   }
 }
