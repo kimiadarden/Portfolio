@@ -23,6 +23,7 @@ class App extends Component {
               <Link to="/">About Me</Link>
               <Link to="/projects">Portfolio</Link>
               <Link to="/contact">Contact</Link>
+              <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d" target="#">  Resume </a>
             </Navigation>
           </Drawer>
           <Content>
