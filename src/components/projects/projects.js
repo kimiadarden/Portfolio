@@ -14,7 +14,7 @@ function App() {
   const [view4, toggle4] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App" >
       <div id="projects" className="projects">
         <h1>Projects</h1>
 
