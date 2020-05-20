@@ -1,21 +1,14 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
-import profile from '../assets/images/profile.JPG'
+import profile from "../assets/images/profile.JPG";
 
 class Landing extends Component {
   render() {
     return (
-      
       <div style={{ width: "100%", margin: "auto" }}>
         <Grid className="landing">
           <Cell col={12}>
-            <img
-              // src="https://www.jumpstarttech.com/files/2018/08/Network-Profile.png"
-              src={profile}
-
-              alt="Profile"
-              className="profile-img"
-            />
+            <img src={profile} alt="Profile" className="profile-img" />
 
             <div className="Profile-text">
               <h1>Full Stack Developer</h1>
@@ -45,7 +38,15 @@ class Landing extends Component {
                   <i className="fa fa-github-square" aria-hidden="true" />
                 </a>
 
-                
+                {/* Email */}
+                <a
+                  title="Google"
+                  className="fa"
+                  href="mailto:kimiadarden@gmail.com"
+                  target="new"
+                >
+                  <i class="fa fa-google" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
           </Cell>
