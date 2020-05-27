@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <div className="demo-big-content">
+      // <div className="demo-big-content">
         <Layout>
           <Header className="header" title scroll>
             <Navigation>
@@ -18,9 +18,9 @@ class App extends Component {
               <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d" target="#">  Resume </a>
             </Navigation>
           </Header>
-          <Drawer title>
-            <Navigation>
-              <Link to="/">About Me</Link>
+          <Drawer title >
+            <Navigation >
+              <Link to="/">About Me </Link>
               <Link to="/projects">Portfolio</Link>
               <Link to="/contact">Contact</Link>
               <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d" target="#">  Resume </a>
@@ -31,7 +31,7 @@ class App extends Component {
             <Main />
           </Content>
         </Layout>
-      </div>
+      // </div>
     );
   }
 }

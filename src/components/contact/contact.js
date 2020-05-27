@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./contact.css";
 
+
 class About extends Component {
   render() {
     return (
