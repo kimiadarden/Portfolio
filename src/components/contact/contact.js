@@ -1,32 +1,63 @@
-import React, { Component } from "react";
-import "./contact.css";
+import React from "react";
+
+import firebase from "../../Firestore";
+
+class User extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      email: "",
+      fullname: "",
+    };
+  }
+
+  updateInput = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  addUser = e => {
+    e.preventDefault();
+    const db = firebase.firestore();
+    db.settings({
+      timestampsInSnapshots: true
+    });
+     db.collection("users").add({
+      fullname: this.state.fullname,
+      email: this.state.email
+    }); 
 
 
-class About extends Component {
+
+
+    this.setState({
+      fullname: "",
+      email: ""
+    });
+  }
+
+
   render() {
     return (
-      <div className="App">
-        <br />
-        <br />
-        <br />
-
-        <br />
-        <div class="container-out">
-          <div class="container-in">
-            <div class="contact-form">
-              <p>Name</p>
-              <input type="text" id="contact-name" />
-              <p>Email</p>
-              <input type="email" id="contact-email" />
-              <p>Message</p>
-              <textarea id="contact-message"></textarea>
-              <button id="send">Send</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <form onSubmit={this.addUser}>
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Full name"
+          onChange={this.updateInput}
+          value={this.state.fullname}
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Full name"
+          onChange={this.updateInput}
+          value={this.state.email}
+        />
+        <button type="submit">Submit</button>
+      </form>
     );
   }
 }
-
-export default About;
+export default User;
