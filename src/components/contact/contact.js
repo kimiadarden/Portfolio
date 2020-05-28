@@ -1,6 +1,6 @@
 import React from "react";
-
 import firebase from "../../Firestore";
+import "./contact.css";
 
 class User extends React.Component {
   constructor() {
@@ -39,32 +39,62 @@ class User extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.addUser}>
-        <input
-          type="text"
-          name="fullname"
-          placeholder="Full name"
-          onChange={this.updateInput}
-          value={this.state.fullname}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={this.updateInput}
-          value={this.state.email}
-        />
+      <div className="App">
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="container-out">
+          <div class="container-in">
+            <div class="contact-form">
+              <form onSubmit={this.addUser}>
+                <p>Name</p>
+                <input
+                  type="text"
+                  name="fullname"
+                  placeholder="Full name"
+                  onChange={this.updateInput}
+                  value={this.state.fullname}
+                />
 
-        <input
-          type="text"
-          name="message"
-          placeholder="Message"
-          onChange={this.updateInput}
-          value={this.state.message}
-        />
+                <p>Email</p>
 
-        <button type="submit">Submit</button>
-      </form>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  onChange={this.updateInput}
+                  value={this.state.email}
+                />
+
+                <p>Message</p>
+
+                <input
+                id="contact-message"
+                  type="textarea"
+                  name="message"
+                  placeholder="Message"
+                  onChange={this.updateInput}
+                  value={this.state.message}
+                />
+<br />
+        <br />
+        
+                <button type="submit">Submit</button>
+              </form>
+              <br />
+        <br />
+        <br />
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+
+
     );
   }
 }
