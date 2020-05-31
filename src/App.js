@@ -4,33 +4,53 @@ import { Layout, Header, Navigation, Drawer, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 
-
 class App extends Component {
   render() {
     return (
       // <div className="demo-big-content">
-        <Layout>
-          <Header className="header" title scroll>
-            <Navigation>
-              <Link to="/">About Me</Link>
-              <Link to="/projects">Portfolio</Link>
-              <Link to="/contact">Contact</Link>
-              <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d" target="#">  Resume </a>
-            </Navigation>
-          </Header>
-          <Drawer title >
-            <Navigation >
-              <Link to="/">About Me </Link>
-              <Link to="/projects">Portfolio</Link>
-              <Link to="/contact">Contact</Link>
-              <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d" target="#">  Resume </a>
-            </Navigation>
-          </Drawer>
-          <Content>
-            <div className="page-content" />
-            <Main />
-          </Content>
-        </Layout>
+      <Layout>
+        <Header className="header" title scroll>
+
+          <div className="name">Kimia Darden</div> 
+          <div className="title-wrap">
+            <div className="title">
+              Web Developer / Software Engineer
+            </div>
+          </div>
+
+
+          <Navigation>
+            <Link to="/">About Me</Link>
+            <Link to="/projects">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
+            <a
+              href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d"
+              target="#"
+            >
+              {" "}
+              Resume{" "}
+            </a>
+          </Navigation>
+        </Header>
+        <Drawer title>
+          <Navigation>
+            <Link to="/">About Me </Link>
+            <Link to="/projects">Portfolio</Link>
+            <Link to="/contact">Contact</Link>
+            <a
+              href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:2dad6899-7004-4a1a-aa63-cbb652920d1d"
+              target="#"
+            >
+              {" "}
+              Resume{" "}
+            </a>
+          </Navigation>
+        </Drawer>
+        <Content>
+          <div className="page-content" />
+          <Main />
+        </Content>
+      </Layout>
       // </div>
     );
   }

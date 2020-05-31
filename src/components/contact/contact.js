@@ -37,6 +37,8 @@ class User extends React.Component {
     });
   };
 
+  
+
   render() {
     return (
       <div className="App">
@@ -47,6 +49,7 @@ class User extends React.Component {
         <div class="container-out">
           <div class="container-in">
             <div class="contact-form">
+            <h3>Contact me</h3>
               <form onSubmit={this.addUser}>
                 <p>Name</p>
                 <input

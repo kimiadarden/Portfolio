@@ -40,3 +40,24 @@
 a {
 	color: white ;
 }
+
+
+
+.name {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.01em;
+  font-size: 2em;
+  text-shadow: -1px 0 silver, 0 1px silver, 1px 0 silver, 0 -1px silver;
+  margin-left: 20px;
+  padding-right: 44px;
+  margin-right: 0.5%;
+
+}
+
+
+
+.title {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4em;
+  color: rgb(197, 166, 166);
+}
