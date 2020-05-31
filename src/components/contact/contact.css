@@ -7,9 +7,9 @@
   
   .container-in {
     padding: 30px 0; /* adds padding at the top and bottom of the inner container */
+    background: #168ab8; /* gives the inner container a background color */
     width: 95%; /* width of inner container equals 95% of the outer container */
     margin: 0 auto; /*centers the outer container in the middle of the outer container */
-    background: #168ab8; /* gives the inner container a background color */
     border-radius: 5px; /* curves the edges of the inner container by 5px */
   }
   
@@ -55,4 +55,19 @@
   
   .contact-form button:hover {
     opacity: 0.7; /* changes the opacity of the button to 0.7 on hover */
+  }
+
+
+
+
+  .desktop-only{
+
+    border-left: 2px solid white;
+    height: 320px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-top: 200px; 
+    
+
   }

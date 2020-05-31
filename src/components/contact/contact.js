@@ -1,6 +1,10 @@
 import React from "react";
 import firebase from "../../Firestore";
 import "./contact.css";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import "./style.scss";
 
 class User extends React.Component {
   constructor() {
@@ -37,8 +41,6 @@ class User extends React.Component {
     });
   };
 
-  
-
   render() {
     return (
       <div className="App">
@@ -46,58 +48,76 @@ class User extends React.Component {
         <br />
         <br />
         <br />
-        <div class="container-out">
-          <div class="container-in">
-            <div class="contact-form">
-            <h3>Contact me</h3>
-              <form onSubmit={this.addUser}>
-                <p>Name</p>
-                <input
-                  type="text"
-                  name="fullname"
-                  placeholder="Full name"
-                  onChange={this.updateInput}
-                  value={this.state.fullname}
-                />
+        <div class="container-in">
+          <Container>
+            <Row>
 
-                <p>Email</p>
+              <div class="contact-form">
+                <h3>Contact me</h3>
+                <Col sm={6}>
+                  <form onSubmit={this.addUser}>
+                    <p>Name</p>
+                    <input
+                      type="text"
+                      name="fullname"
+                      placeholder="Full name"
+                      onChange={this.updateInput}
+                      value={this.state.fullname}
+                    />
 
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  onChange={this.updateInput}
-                  value={this.state.email}
-                />
+                    <p>Email</p>
 
-                <p>Message</p>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      onChange={this.updateInput}
+                      value={this.state.email}
+                    />
 
-                <input
-                id="contact-message"
-                  type="textarea"
-                  name="message"
-                  placeholder="Message"
-                  onChange={this.updateInput}
-                  value={this.state.message}
-                />
-<br />
-        <br />
-        
-                <button type="submit">Submit</button>
-              </form>
-              <br />
-        <br />
-        <br />
-            </div>
-          </div>
+                    <p>Message</p>
+
+                    <input
+                      id="contact-message"
+                      type="textarea"
+                      name="message"
+                      placeholder="Message"
+                      onChange={this.updateInput}
+                      value={this.state.message}
+                    />
+                    <br />
+                    <br />
+
+                    <button type="submit">Submit</button>
+                  </form>
+                </Col>
+
+
+                <div className="example">
+                  <hr className="mobile-only" />
+                  <div className="desktop-only"
+                  
+                  
+                  ></div>
+                </div>
+
+                <Col sm={6}>right</Col>
+
+                <br />
+                <br />
+                <br />
+              </div>
+
+              {/* </div> */}
+            </Row>
+          </Container>
         </div>
+
         <br />
         <br />
         <br />
         <br />
       </div>
-
-
     );
   }
 }
