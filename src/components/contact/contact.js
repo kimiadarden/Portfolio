@@ -48,13 +48,18 @@ class User extends React.Component {
         <br />
         <br />
         <br />
+
+        
+                <h3>Contact me</h3>
         <div class="container-in">
           <Container>
             <Row>
-
               <div class="contact-form">
-                <h3>Contact me</h3>
                 <Col sm={6}>
+                  
+                  <h3>Message me here!</h3>
+                  <br />
+
                   <form onSubmit={this.addUser}>
                     <p>Name</p>
                     <input
@@ -92,16 +97,65 @@ class User extends React.Component {
                   </form>
                 </Col>
 
-
                 <div className="example">
                   <hr className="mobile-only" />
-                  <div className="desktop-only"
-                  
-                  
-                  ></div>
+                  <div className="desktop-only"></div>
                 </div>
 
-                <Col sm={6}>right</Col>
+                <Col sm={6}>
+                    <h3>My Info</h3>
+                  <div class="contact-form">
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Mollitia nemo sit illum magni hic vel unde facere? Eius
+                    quidem cum atque rem dolorum architecto, itaque debitis
+                    facilis id temporibus. Non.
+                  </p> 
+
+                  <br/>
+                    <p>
+                      <i class="fas fa-map-marker-alt"></i>&nbsp; New York City Metropolitan Area 
+       
+                    </p>
+                    <p>
+                      <i class="fas fa-phone-alt"></i>&nbsp; 301 461 1846
+                    </p>
+                    <p>
+                      <i class="fas fa-envelope"></i>&nbsp; kimiadarden@gmail.com
+                    </p>
+                  </div>
+                  <div className="social">
+                    {/* LinkedIn */}
+                    <a
+                      href="https://www.linkedin.com/in/kimia-darden/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i className="fa fa-linkedin-square" aria-hidden="true" />
+                    </a>
+
+                    {/* Github */}
+                    <a
+                      href="https://github.com/kimiadarden"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <i className="fa fa-github-square" aria-hidden="true" />
+                    </a>
+
+                    {/* Email */}
+                    <a
+                      title="Google"
+                      className="fa"
+                      href="mailto:kimiadarden@gmail.com"
+                      target="new"
+                    >
+                      <i className="fa fa-google" aria-hidden="true" />
+                    </a>
+                  </div>
+
+
+                </Col>
 
                 <br />
                 <br />

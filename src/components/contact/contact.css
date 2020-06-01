@@ -1,12 +1,6 @@
-.container-out {
-    font-family: "Fira Sans", sans-serif; /* adds font obtained from google fonts */
-    padding: 15px 0; /* adds padding at the top and bottom of the outer container */
-    max-width: 400px; /* gives the outer container a maximum width of 400px */
-    margin: 0 auto; /*centers the outer container in the middle of the body */
-  }
-  
+
   .container-in {
-    padding: 30px 0; /* adds padding at the top and bottom of the inner container */
+    padding: 15px 0; /* adds padding at the top and bottom of the inner container */
     background: #168ab8; /* gives the inner container a background color */
     width: 95%; /* width of inner container equals 95% of the outer container */
     margin: 0 auto; /*centers the outer container in the middle of the outer container */
@@ -14,8 +8,9 @@
   }
   
   .contact-form {
-    width: 85%; /* width of inner container equals 85% of the inner container */
+    width: 95%; /* width of inner container equals 85% of the inner container */
     margin: 0 auto; /*centers the outer container in the middle of the inner container */
+
   }
   
   .contact-form p {
@@ -63,7 +58,7 @@
   .desktop-only{
 
     border-left: 2px solid white;
-    height: 320px;
+    height: 400px;
     position: absolute;
     left: 50%;
     top: 0;
@@ -71,3 +66,14 @@
     
 
   }
+
+  .contact-info {
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.contact-info h3{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: 50px auto 30px auto;
+}
