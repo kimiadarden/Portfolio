@@ -103,16 +103,14 @@ class User extends React.Component {
                 <Col sm={6}>
                   <h3>My Info</h3>
                   <div class="contact-form">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Mollitia nemo sit illum magni hic vel unde facere? .
-                    </p>
-<br/>
+                    <p></p>
                     <br />
-                    <p>
+                    <br />
 
-                    <i class="fa fa-user" aria-hidden="true">&nbsp; Kimia Darden</i>
-                      
+                    <p>
+                      <i class="fa fa-user" aria-hidden="true">
+                        &nbsp; Kimia Darden
+                      </i>
                     </p>
                     <p>
                       <i class="fa fa-map-marker" aria-hidden="true">
@@ -130,39 +128,47 @@ class User extends React.Component {
                         &nbsp; kimiadarden@gmail.com
                       </i>
                     </p>
-                  {/* </div> */}
-                  <br />
-                  <div className="social-contact">
-                    {/* LinkedIn */}
-                    <a
-                      href="https://www.linkedin.com/in/kimia-darden/"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <i className="fa fa-linkedin-square" aria-hidden="true" />
-                    </a>
+                    <br />
+                    <br />
+                    <br />
 
-                    {/* Github */}
-                    <a
-                      href="https://github.com/kimiadarden"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <i className="fa fa-github-square" aria-hidden="true" />
-                    </a>
 
-                    {/* Email */}
-                    <a
-                      title="Google"
-                      className="fa"
-                      href="mailto:kimiadarden@gmail.com"
-                      target="new"
-                    >
-                      <i className="fa fa-google" aria-hidden="true" />
-                    </a>
+                    <br />
+                    {/* </div> */}
+                    <br />
+                    <div className="social-contact">
+                      {/* LinkedIn */}
+                      <a
+                        href="https://www.linkedin.com/in/kimia-darden/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        <i
+                          className="fa fa-linkedin-square"
+                          aria-hidden="true"
+                        />
+                      </a>
+
+                      {/* Github */}
+                      <a
+                        href="https://github.com/kimiadarden"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        <i className="fa fa-github-square" aria-hidden="true" />
+                      </a>
+
+                      {/* Email */}
+                      <a
+                        title="Google"
+                        className="fa"
+                        href="mailto:kimiadarden@gmail.com"
+                        target="new"
+                      >
+                        <i className="fa fa-google" aria-hidden="true" />
+                      </a>
+                    </div>
                   </div>
-                  </div>
-
                 </Col>
 
                 <br />

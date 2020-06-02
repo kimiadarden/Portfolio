@@ -26,6 +26,8 @@
     padding: 10px; /* adds 10px padding to all sides of the input */
     box-sizing: border-box; /* prevents the input from overflowing out of the parent div */
     border-radius: 3px; /* curves the edges of the input by 3px */
+    color: gray; /* changes the text color of the p tag to white */
+
   }
   
   .contact-form textarea {
@@ -36,6 +38,7 @@
     min-height: 120px; /* gives the text-area a minimum height of 120px */
     margin-bottom: 15px; /* adds margin at the bottom of the textarea */
     resize: vertical; /* limits resizing to vertical resizing */
+    
   }
   
   .contact-form button {
