@@ -49,14 +49,12 @@ class User extends React.Component {
         <br />
         <br />
 
-        
-                <h3>Contact me</h3>
+        <h3>Contact me</h3>
         <div class="container-in">
           <Container>
             <Row>
               <div class="contact-form">
                 <Col sm={6}>
-                  
                   <h3>Message me here!</h3>
                   <br />
 
@@ -103,28 +101,38 @@ class User extends React.Component {
                 </div>
 
                 <Col sm={6}>
-                    <h3>My Info</h3>
+                  <h3>My Info</h3>
                   <div class="contact-form">
-                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Mollitia nemo sit illum magni hic vel unde facere? Eius
-                    quidem cum atque rem dolorum architecto, itaque debitis
-                    facilis id temporibus. Non.
-                  </p> 
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Mollitia nemo sit illum magni hic vel unde facere? .
+                    </p>
+<br/>
+                    <br />
+                    <p>
 
-                  <br/>
-                    <p>
-                      <i class="fas fa-map-marker-alt"></i>&nbsp; New York City Metropolitan Area 
-       
+                    <i class="fa fa-user" aria-hidden="true">&nbsp; Kimia Darden</i>
+                      
                     </p>
                     <p>
-                      <i class="fas fa-phone-alt"></i>&nbsp; 301 461 1846
+                      <i class="fa fa-map-marker" aria-hidden="true">
+                        &nbsp;New York City Metropolitan Area
+                      </i>
                     </p>
                     <p>
-                      <i class="fas fa-envelope"></i>&nbsp; kimiadarden@gmail.com
+                      <i class="fa fa-phone" aria-hidden="true">
+                        &nbsp; 301 461 1846
+                      </i>
                     </p>
-                  </div>
-                  <div className="social">
+                    <p>
+                      {/* <i class="fa fa-envelope-o" aria-hidden="true">&nbsp; <span style={{color: "red"}}><a href="mailto:kimiadarden@gmail.com" >kimiadarden@gmail.com</a></span></i> */}
+                      <i class="fa fa-envelope-o" aria-hidden="true">
+                        &nbsp; kimiadarden@gmail.com
+                      </i>
+                    </p>
+                  {/* </div> */}
+                  <br />
+                  <div className="social-contact">
                     {/* LinkedIn */}
                     <a
                       href="https://www.linkedin.com/in/kimia-darden/"
@@ -153,7 +161,7 @@ class User extends React.Component {
                       <i className="fa fa-google" aria-hidden="true" />
                     </a>
                   </div>
-
+                  </div>
 
                 </Col>
 
