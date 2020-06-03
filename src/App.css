@@ -2,7 +2,7 @@
   background: #0B486B;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ ;
-
+  font-family: 'Caveat', cursive  !important;
 }
 
 
@@ -26,6 +26,19 @@
   padding: 8px;
 }
 
+.social-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.social-contact i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
 
 .App {
   /* background: #000000; */
@@ -43,21 +56,9 @@ a {
 
 
 
-.name {
-  font-family: 'Caveat', cursive;
+.mdl-layout__title, .mdl-layout-title{
+  
   letter-spacing: 0.01em;
-  font-size: 2em;
-  text-shadow: -1px 0 silver, 0 1px silver, 1px 0 silver, 0 -1px silver;
-  margin-left: 20px;
-  padding-right: 44px;
-  margin-right: 0.5%;
-
-}
-
-
-
-.title {
-  font-family: 'Caveat', cursive;
-  font-size: 1.4em;
-  color: rgb(197, 166, 166);
+  font-family: 'Caveat', cursive  !important;
+  text-shadow: -1px 0 goldenrod, 0 1px goldenrod, 1px 0 goldenrod, 0 -1px goldenrod;
 }

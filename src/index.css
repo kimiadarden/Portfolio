@@ -7,10 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 .Profile-text{
@@ -30,9 +26,16 @@ code {
 
 .Profile-text hr {
   border-top: 5px dotted white;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
+
+.Profile-text p {
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+
 
 .Profile-text p {
   color: white;

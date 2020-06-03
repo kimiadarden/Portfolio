@@ -9,16 +9,10 @@ class App extends Component {
     return (
       // <div className="demo-big-content">
       <Layout>
-        <Header className="header" title scroll>
-
-          <div className="name">Kimia Darden</div> 
-          <div className="title-wrap">
-            <div className="title">
-              Web Developer / Software Engineer
-            </div>
-          </div>
-
-
+        <Header className="header"  
+      
+        title="Kimia Darden &nbsp; &nbsp;&nbsp;  Web Developer / Software Engineer"  scroll>
+  
           <Navigation>
             <Link to="/">About Me</Link>
             <Link to="/projects">Portfolio</Link>
@@ -32,7 +26,7 @@ class App extends Component {
             </a>
           </Navigation>
         </Header>
-        <Drawer title>
+        <Drawer className="header" title="Kimia Darden">
           <Navigation>
             <Link to="/">About Me </Link>
             <Link to="/projects">Portfolio</Link>
