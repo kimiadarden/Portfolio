@@ -11,7 +11,7 @@ My Full Stack Developer portfolio, constructed using React Framework and Firebas
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on
-your local machine for development and testing purposes. 
+your local machine for development and testing purposes
 
 ### Prerequisites
 
